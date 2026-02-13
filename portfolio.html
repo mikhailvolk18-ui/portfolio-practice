@@ -4,11 +4,12 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Grapher Shot Home</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 <body>
-	<header>
+	<header class="site__header text-color">
 		<p>GRAPHER SHOT</p>
-		<nav>
+		<nav class="nav text-color">
 			<a href="portfolio.html">PORTFOLIO</a>
 			<a href="#about">ABOUT ME</a>
 			<a href="#portfolio">PORTFOLIO</a>
@@ -17,32 +18,47 @@
 		</nav>
 	</header>
 	<main>
-		<section>
-			<h1>PHOTOGRAPHY</h1>
-			<p>Pellentesquee mauris a lobortis in bibendum sed lobortis semper. Eget eu vel eu vitae.</p>
-			<a href="https://web.dev/learn/html" target="_blank" class="button">Order Now</a>
+		<section class="hero">
+			<div class="hero__bg">
+				<div class="hero__bg--left"></div>
+				<div class="hero__bg--right"></div>
+			</div>
+			<div class="hero__person"></div>
+			<div class="hero__content">
+				<h1 class="hero__title">
+					CAPTURE <br> 
+					<span class="hero__title--indent">MOMENTS</span>
+				</h1>
+				<p class="hero__text">
+					Discover the art of photography with us.<br> 
+					We capture your precious moments<br> 
+					and turn them into timeless memories.
+				</p>
+				<a href="#" target="_blank" class="hero__button text-color">Order Now</a>
+			</div>
 		</section>
-		<section>
-			<h2>ABOUT US</h2>
-			<p>Tincidunt sagittis mollis nec suspendisse sed felis massa urna nec. Urna quisque blandit turpis ultrices arcu ut sed. Ultricies diam est aliquet porta fermentum molestie morbi libero. Ultrices sit in elit eget nullam sem. Urna velit imperdiet habitant in.</p>
+		<section class="about-us content">
+			<div class="about-us__top">
+				<h2 class="about-us__title">ABOUT US</h2>
+				<p class="about-us__text">Tincidunt sagittis mollis nec suspendisse sed felis massa urna nec. Urna quisque blandit turpis ultrices arcu ut sed. Ultricies diam est aliquet porta fermentum molestie morbi libero. Ultrices sit in elit eget nullam sem. Urna velit imperdiet habitant in.</p>
+			</div>
 			<article id="about">
 				<div class="text-row">
-  				<div class="text-item">
-    				<h3>+10 Years</h3>
-    				<p>Experience</p>
-  				</div>
-  				<div class="text-item">
-    				<h3>+450</h3>
-    				<p>Customers</p>
-  				</div>
-  				<div class="text-item">
-    				<h3>+15K</h3>
-    				<p>Portfolio Photos</p>
-  				</div>
+					<div class="text-item">
+						<h3>+10 Years</h3>
+						<p>Experience</p>
+					</div>
+					<div class="text-item">
+						<h3>+450</h3>
+						<p>Customers</p>
+					</div>
+					<div class="text-item">
+						<h3>+15K</h3>
+						<p>Portfolio Photos</p>
+					</div>
 				</div>
 			</article>
-			<article>
-				<div class="gallery">
+				<div class="about-us__gallery">
 					<div class="img-container">
 						<img src="images/pretty-eyes.png" alt="Pretty Eyes">
 					</div>
@@ -62,7 +78,6 @@
 						<img src="images/senior-woman-and-her-daughter.avif" alt="Senior Woman and Her Daughter">
 					</div>
 				</div>
-			</article>
 		</section>
 	</main>
 </body>
